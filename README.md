@@ -45,7 +45,8 @@ Common words are mapped onto these four, so `true`/`supported`/`pass` become
    falsification.
 
 Evidence that admits no check happened — *should work*, *looks correct*,
-*not run* — is rejected outright under any verdict.
+*not run* — is rejected for a `verified` verdict, unless the same evidence also
+shows a command really ran (an exit code, a test count, pasted output).
 
 ## Install
 
@@ -148,9 +149,8 @@ The point of the tool is that you turn it on your own work. The pattern:
 4. Run `audit` before you report back, and read `W001` as your to-do list.
 5. Hand over the report. Say what is unproven instead of hoping nobody asks.
 
-This repository's own build was recorded this way; see `SELF-AUDIT.md` for the
-ledger, the two claims that stayed unresolved, and the three real bugs that
-applying the tool to its own build surfaced.
+This repository's own build was recorded this way, and applying the tool to its
+own build surfaced three real bugs (now covered by regression tests).
 
 ## The drop-in prompt
 

@@ -2,8 +2,8 @@
 
 Copy everything inside the fence below and paste it as the first message to any
 coding agent that has shell access to the project. It assumes `agent-ledger`
-(and optionally its `CODEBASE-NOTES.md`) has been added to the project; it
-does not assume any particular framework or model.
+has been added to the project; it does not assume any particular framework or
+model.
 
 Works as-is if the two files sit at `tools/agent-ledger/`. If you put them
 somewhere else, change the `LEDGER` path on the `SETUP` line only — every later
